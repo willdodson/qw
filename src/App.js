@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import {Link} from 'react-router';
+import logo from './logo.png';
 import './App.css';
 
 class App extends Component {
@@ -7,12 +8,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Shelfie</h1>
+          <img src={logo}></img>
+          <h1 className="App-title">SHELFIE</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="Shelf-main">
+          {/* <Link to='/Suffff/' className='btn'>Shelf A</Link> */}
+          <button className='btn'>Shelf A</button>
+          <button className='btn'>Shelf B</button>
+          <button className='btn'>Shelf C</button>
+          <button className='btn'>Shelf D</button>
+        </div>
       </div>
     );
   }

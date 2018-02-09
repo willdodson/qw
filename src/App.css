@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  border-color: blue; 
 }
 
 .App-logo {
@@ -9,15 +9,26 @@
 
 .App-header {
   background-color: red;
-  height: 150px;
+  display: flex;
+  height: 80px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
+.btn {
+  background-color: lightgreen;
+  border-radius: 2px;
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  height: 60 px;
+  width: 75%;
+  font-size: 2em; 
+}
 .App-intro {
   font-size: large;
 }

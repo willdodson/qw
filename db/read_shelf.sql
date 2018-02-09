@@ -1,0 +1,1 @@
+SELECT * FROM shelf WHERE bin_id=$1;

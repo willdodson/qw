@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 // import {Link} from 'react-router';
 import logo from './logo.png';
 import './App.css';
+import router from './router';
+// import { HashRouter } from 'react-router-dom';
+
 
 class App extends Component {
   render() {
@@ -11,12 +14,8 @@ class App extends Component {
           <img src={logo}></img>
           <h1 className="App-title">SHELFIE</h1>
         </header>
-        <div className="Shelf-main">
-          {/* <Link to='/Suffff/' className='btn'>Shelf A</Link> */}
-          <button className='btn'>Shelf A</button>
-          <button className='btn'>Shelf B</button>
-          <button className='btn'>Shelf C</button>
-          <button className='btn'>Shelf D</button>
+        <div>
+          {router}
         </div>
       </div>
     );

@@ -13,12 +13,12 @@ massive( process.env.CONNECTION_STRING ).then( dbInstance => {
     app.set('db', dbInstance) 
 });
 
-app.get( '/api/shelf/:id', controller.getShelf );
-app.get( '/api/bin/:id', controller.getBin );
+app.get( '/api/shelf/:id', controller.read );
+app.get( '/api/bin/:id', controller.read );
 app.put( '/api/bin/:id', controller.update );
 app.delete( '/api/bin/:id', controller.delete );
-app.post( '/api/bin/:id', controller.createBin );
+app.post( '/api/bin/:id', controller.add );
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 app.listen( port, () => { console.log(`Server listnin on port ${port}.`); } );
